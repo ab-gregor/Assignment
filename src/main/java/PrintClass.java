@@ -20,6 +20,8 @@ public class PrintClass extends HttpServlet{
 		pw.println("Last name"+lName);
 		pw.println("email"+email);
 		pw.println("password"+password);
+		res.setContentType("text/html");
+		pw.println("<html><body><a href='login'>Login</a></body></html>");
 		
 		
 }

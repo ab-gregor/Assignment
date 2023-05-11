@@ -19,7 +19,7 @@ public class Register extends HttpServlet {
 		req.setAttribute("email", email);
 		req.setAttribute("password", password);
 		
-		res.sendRedirect("pr");
+		//res.sendRedirect("pr?fName="+fName);
 		RequestDispatcher rd = req.getRequestDispatcher("pr");
 		rd.forward(req, res);
 	}
